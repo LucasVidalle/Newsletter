@@ -19,13 +19,10 @@ body{
     margin-right: 10%;
 }
 
-.groups #grid{
-    display: grid;
-    grid-template-columns: 10rem 10rem;
-    grid-template-rows: 5rem;
-    row-gap: px;
-    column-gap: px;
-    
+.groups{
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .group-1{
@@ -46,6 +43,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 0.5rem;
+    padding-bottom: 2rem;
 }
 
 #star-1{
@@ -77,5 +75,9 @@ body{
     font-size: 1.27rem;
     font-weight: lighter;
     color: grey;
+    padding: 0 221px;
 }
 
+.designer{
+    display: flex;
+}
