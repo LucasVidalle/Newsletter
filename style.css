@@ -8,15 +8,13 @@ body{
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .all-content{
+    font-family: Montserrat;
     background-color: white;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 9% 9% 9% 9%;
+    padding: 3% 3% 3% 3%;
 }
 
 .groups{
@@ -42,8 +40,9 @@ body{
 .stars{
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    padding-bottom: 2rem;
+    gap: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #star-1{
@@ -72,12 +71,111 @@ body{
 }
 
 .info-1{
-    font-size: 1.27rem;
-    font-weight: lighter;
-    color: grey;
-    padding: 0 221px;
+    font-size: 1.03rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.7rem;
+    color: var(--second-text-color, #737373);
+    padding: 0 30%;
 }
 
 .designer{
     display: flex;
+    padding-top: 2rem;
+}
+
+#designer-photo{
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.designer-info{
+    display: flex;
+    flex-direction: column;
+}
+
+#designer-name{
+    color: #23A6F0;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#designer-descrption{
+    color: var(--text-color, #252B42);
+    font-family: Montserrat;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1.8rem;
+}
+
+.divider {
+    height: 20rem;
+    width: 0.125rem;
+    background-color: lightgray;
+    margin: 1.2rem;
+  }
+
+#help-text{
+    color: var(--disabled-element-text-color, #8EC2F2);
+    font-family: Montserrat;
+    font-size: 1.05rem;
+    font-style: normal;
+    padding-top: 1rem;
+}
+
+#flashy-text{
+    color: var(--text-color, #252B42);
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    padding: 5% 18%;
+    }
+
+.container form {
+    width: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    }
+      
+#email {
+    box-sizing: border-box;
+    height: 3.62rem;
+    width: 16.37rem;
+    margin-bottom: 0.7em;
+    padding-left: 1.25rem;
+    border: 1px solid #e6e6e6;
+    color: gray;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    font-size: 0.87rem;
+    }
+      
+#email::placeholder {
+    font-weight: bolder;
+    }
+      
+#submit {
+    height: 3.62rem;
+    width: 8rem;
+    border: none;
+    background-color: #23a6f0;
+    font-size: 0.87rem;
+    color: white;
+    border-radius: 3px;
+    }
+
+#help-text-2{
+    color: var(--disabled-element-text-color, #737373);
+    font-family: Montserrat;
+    font-size: 1.05rem;
+    font-style: normal;
+    padding-top: 1rem; 
+}
+
+@media only screen and (max-width: 767px) {
+    
 }
