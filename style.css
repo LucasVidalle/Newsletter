@@ -174,8 +174,32 @@ body{
     font-size: 1.05rem;
     font-style: normal;
     padding-top: 1rem; 
-}
+    }
 
 @media only screen and (max-width: 767px) {
-    
-}
+    body {
+        background-image: url(background_img.png);
+        display: flex;
+        flex-direction: column;
+    }
+
+.all-content {
+    flex-direction: column;
+    width: 70.5rem;
+  }
+
+.group-1 {
+    display: flex;
+    width: 27.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.87rem;
+  }
+
+.divider {
+    height: 0.125rem;
+    width: 20rem;
+  }
+
+
