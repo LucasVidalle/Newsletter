@@ -4,16 +4,19 @@
 }
 
 body{
-    background-image: url("background_img.png");
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url(background_img.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
+    background-size: cover;
 }
 
 .all-content{
     font-family: Montserrat;
     background-color: white;
-    margin: 9% 9% 9% 9%;
+    margin: 7% 12% 7% 7%;
     padding: 3% 3% 3% 3%;
 }
 
@@ -76,7 +79,7 @@ body{
     font-style: normal;
     line-height: 1.7rem;
     color: var(--second-text-color, #737373);
-    padding: 0 30%;
+    padding: 0 25%;
 }
 
 .designer{
@@ -129,7 +132,7 @@ body{
     font-size: 3rem;
     font-style: normal;
     font-weight: bold;
-    padding: 5% 18%;
+    padding: 5% 11% 5% 11%;
     }
 
 .container form {
@@ -179,27 +182,53 @@ body{
 @media only screen and (max-width: 767px) {
     body {
         background-image: url(background_img.png);
-        display: flex;
-        flex-direction: column;
+        min-height: 100vh;
     }
 
-.all-content {
-    flex-direction: column;
-    width: 70.5rem;
-  }
+    .all-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+        text-align: center;
+        padding: 3rem;
+        gap: 1.56rem;
+        background-color: white;
+        margin: 5%;
+    }
 
-.group-1 {
-    display: flex;
-    width: 27.375rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.87rem;
-  }
+    .groups{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.divider {
-    height: 0.125rem;
-    width: 20rem;
-  }
+    .group-1 {
+        display: flex;
+        width: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.87rem;
+    }
 
+    .info-1 {
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+    }
 
+    .divider {
+        height: 0.125rem;
+        width: 20rem;
+    }
+
+    .group-2 {
+        display: flex;
+        width: 30rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.87rem;
+    }
